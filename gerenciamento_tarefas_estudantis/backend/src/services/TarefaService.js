@@ -6,7 +6,6 @@ const { Op } = require('sequelize');
 class tarefaService {
     async createTarefa(tarefa) { // response
       await Tarefa.create(tarefa)
-      //.then(result => body.tarefaId = result.id);
     }
 
     async deleteTarefa(id) {

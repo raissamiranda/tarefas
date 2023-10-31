@@ -10,8 +10,6 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-//import { SignUpSubmit } from '../../services/usercrud';
-//import { useAuth } from '../../services/AuthContext';
 import { SignUpSubmit } from '../../services/usercrud';
 import { useNavigate } from "react-router-dom";
 
@@ -39,8 +37,6 @@ const theme = createTheme();
 
 export default function SignUp() {
   const navigate = useNavigate();
-  //const { handleSignUp } = useAuth();
-  //const auth = useAuth();
   const handleSignUp = (event) => {
     event.preventDefault();
     const newUserData = new FormData(event.currentTarget);

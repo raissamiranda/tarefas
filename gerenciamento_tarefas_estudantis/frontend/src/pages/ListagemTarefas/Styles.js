@@ -73,5 +73,4 @@ export const ContractGrid = styled(DataGrid)(({ theme }) => ({
   marginTop: 50,
   marginLeft: 25,
   marginRight: 25,
-  // border: "none",
 }));

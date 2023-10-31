@@ -15,12 +15,6 @@ import {
   BoxStyle
 } from './Styles';
 
-// type Props = {
-//   title: string;
-//   content: string;
-//   openImageUrlModal: boolean;
-//   handleCloseImageUrlModal: (url)=>any;
-// }
 
 export default function ImagePickModal({
   title, 
