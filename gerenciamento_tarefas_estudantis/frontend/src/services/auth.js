@@ -1,4 +1,3 @@
-// export const TOKEN_KEY = "@projetoInterno-Token";
 import { User } from './AuthContext';
 export const USER_KEY = "@projetoInterno-User";
 

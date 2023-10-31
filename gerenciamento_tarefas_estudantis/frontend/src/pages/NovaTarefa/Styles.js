@@ -30,7 +30,6 @@ export const DataContainer = styled('div')(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start",
   gap: 5,
-//   overflowY: "scroll",
   paddingTop: 50,
   paddingBottom: 25
 
@@ -42,7 +41,6 @@ export const DataAlign = styled('div')(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start",
   gap: 10,
-  //width: "100%"
 
 }));
 

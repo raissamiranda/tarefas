@@ -11,9 +11,6 @@ import Home from "./pages/PaginaInicial/PaginaInicial"
 import Edit from "./pages/ProjectEdit/projectEdit"
 
 
-//import { AuthProvider } from "../services/AuthContext";
-//import { ThemeProvider } from '@mui/material/styles';
-//import { theme } from './utils/styles/theme';
 
 function App() {
   return (

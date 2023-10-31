@@ -52,7 +52,6 @@ export default function SignInSide() {
           md={7}
           sx={{
             backgroundImage: 'url(https://wallpapers.com/images/hd/study-table-soft-aesthetic-iwuk4cee6vxijmku.jpg)',
-            //backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',

@@ -43,12 +43,6 @@ import {
 
 const theme = createTheme();
 
-// const useStyles = makeStyles((theme) => ({
-//   textfield_input: {
-//       color: `#c5cae9 !important`,
-//   }
-// }));
-
 
 export default function ProjectRegister() {
   const navigate = useNavigate();
@@ -70,7 +64,6 @@ export default function ProjectRegister() {
       .catch((err) => console.log(err.response))
   }
 
-  //const classes = useStyles();
 
   return (
     <ThemeProvider theme={theme}>
@@ -104,9 +97,6 @@ export default function ProjectRegister() {
                   autoFocus
                   color="secondary"
                   sx={{borderColor: '#ffcdd4', bgcolor: '#efc2c9' }}
-                  //color='#ffcdd4'
-                  //inputProps={{className: classes.textfield_input}}
-                  //color='#ffcdd4'
                 />
               </Grid>
               <Grid item xs={12}>

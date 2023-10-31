@@ -4,7 +4,6 @@ const TarefaService = require('../services/TarefaService');
 
 const objectFilter = require('../middlewares/object-filter');
 const tarefaValidate = require('../middlewares/tarefa-validator');
-// const {uploadContract} = require('../middlewares/multer');
 
 const {
     verifyJWT,
@@ -12,8 +11,6 @@ const {
 
 router.post('/createTarefa',
   objectFilter('body', ['name', 'deadline', 'subject', 'value', 'activity']),
-  //verifyJWT,
-  //tarefaValidate('createTarefa'),
   async (req, res, next) => {
     try {
       const tarefa = {
@@ -59,7 +56,6 @@ router.get('/getTarefa/:id',
 });
 
 router.get('/getTarefadate/:deadline',
-    //objectFilter('body', ['deadline']),
     verifyJWT,
   async (req, res, next) => {
     try {
@@ -73,7 +69,6 @@ router.get('/getTarefadate/:deadline',
 });
 
 router.get('/getTarefaMateria/:subject',
-    //objectFilter('body', ['subject']),
     verifyJWT,
   async (req, res, next) => {
     try {
@@ -89,7 +84,6 @@ router.get('/getTarefaMateria/:subject',
 router.put('/update/:id',
   objectFilter('body', ['name', 'deadline', 'subject', 'value', 'activity']),
   verifyJWT,
-  //tarefaValidate('updateTarefa'),
   async (req, res, next) => {
     try {
       await TarefaService.updateTarefa(req.params.id, req.body);

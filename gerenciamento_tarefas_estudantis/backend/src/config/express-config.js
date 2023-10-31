@@ -18,12 +18,6 @@ const express = require('express'); //chama a biblioteca instalada
  
     try {
         const resultado = await database.sync();
-        //const resultadoCreate = await Tarefa.create({
-        //    name: 'amor',
-        //    deadline: 2022-10-10,
-        //    subject: 'math'
-        //})
-        //console.log(resultadoCreate);
         console.log(resultado);
     } catch (error) {
         console.log(error);
