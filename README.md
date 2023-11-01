@@ -1,4 +1,4 @@
-# Sistema para gerenciamento de tareas
+# Sistema para gerenciamento de tarefas
 ## Membros do grupo:
 Gabriela Moraes Miserani de Freitas 
 
