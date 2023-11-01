@@ -139,33 +139,6 @@ router.get('/me',
     }
   }
   )
-router.delete('/delete/:id',
-  verifyJWT, 
-  async (req, res, next) => {
-    try {
-      await UserService.deleteUser(req.params.id, req.user.id);
 
-      res.status(200).end();
-    } catch (error) {
-      next(error);
-    }
-  },
-);
-
-router.post('/sendMail',
-  objectFilter('body', ['email']),
-  userValidate('sendEmail'),
-  async (req, res, next) => {
-    try {
-      const email = req.body.email;
-      const user = await UserService.getUserByEmail(email);
-      const code = await UserService.sendEmail(user.email);
-      await UserService.updatePassword(user, code);
-
-      res.status(200).end();
-    } catch (error) {
-      next(error);
-    }
-});
 
 module.exports = router;

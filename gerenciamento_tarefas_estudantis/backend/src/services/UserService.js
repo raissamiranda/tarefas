@@ -70,33 +70,6 @@ class UserService {
     await user.destroy();
   }
 
-  async sendEmail(email) {
-    let code = Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000;
-    let codeString = code.toString();
-    var transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: 'ijuniorteste1@gmail.com',
-        pass: 'ijunior2022'
-      }
-    });
-
-    var mailOptions = {
-      from: 'ijuniorteste1@gmail.com',
-      to: email,
-      subject: 'Criação nova senha',
-      text: codeString
-    };
-    
-    transporter.sendMail(mailOptions, function(error, info) {
-      if (error) {
-        console.log(error);
-      } 
-    });
-
-    return codeString;
-  }
-
   async getUserByEmail(email) {
     const user = await User.findOne({
       where: { email: email },
