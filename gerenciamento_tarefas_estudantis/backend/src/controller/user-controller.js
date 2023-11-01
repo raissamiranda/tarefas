@@ -11,7 +11,7 @@ const {
 } = require('../middlewares/auth-middlewares');
 
 router.post('/create',
-  objectFilter('body', ['name', 'email', 'password', 'interesses', 'periodo', 'materias']),
+  objectFilter('body', ['name', 'email', 'password', 'interests', 'term', 'subjects']),
   userValidate('create'),
   async (req, res, next) => {
     try {
@@ -19,9 +19,9 @@ router.post('/create',
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
-        interesses: req.body.interesses,
-        periodo: req.body.periodo,
-        materias:req.body.materias,
+        interests: req.body.interests,
+        term: req.body.term,
+        subjects:req.body.subjects,
       };
 
       await UserService.createUser(user);
@@ -33,7 +33,7 @@ router.post('/create',
 });
 
 router.post('/createUser',
-  objectFilter('body', ['name', 'email', 'password', 'interesses', 'periodo', 'materias']),
+  objectFilter('body', ['name', 'email', 'password', 'interests', 'term', 'subjects']),
   userValidate('createUser'),
   async (req, res, next) => {
     try {
@@ -41,9 +41,9 @@ router.post('/createUser',
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
-        interesses: req.body.interesses,
-        periodo: req.body.periodo,
-        materias: req.body.materias,
+        interests: req.body.interests,
+        term: req.body.term,
+        subjects: req.body.subjects,
       };
 
       await UserService.createUser(user);

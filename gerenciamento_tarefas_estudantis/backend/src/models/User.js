@@ -25,17 +25,17 @@ const User = database.define('usuario', {
         allowNull: false,
     },
     
-    interesses: {
+    interests: {
         type: DataTypes.STRING,
         allowNull: true,
     },
 
-    periodo: {
+    term: {
         type: DataTypes.INTEGER,
         allowNull: true,
     },
 
-    materias: {
+    subjects: {
         type: DataTypes.STRING,
         allowNull: true,
     },

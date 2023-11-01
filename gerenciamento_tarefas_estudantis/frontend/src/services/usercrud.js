@@ -18,9 +18,9 @@ async function SignUpSubmit(newUserData) {
     name: newUserData.get('firstName'),
     email: newUserData.get('email'),
     password: newUserData.get('password'),
-    interesses: newUserData.get('interesses'),
-    periodo: newUserData.get('periodo'),
-    materias: newUserData.get('materias'),
+    interests: newUserData.get('interests'),
+    term: newUserData.get('term'),
+    subjects: newUserData.get('subjects'),
   })
 }
 async function TarefaSignUp(newProjectData) {
@@ -69,9 +69,9 @@ async function getUser(id, myself) {
     name: res.data.name,
     email: res.data.email,
     password: res.data.password,
-    interesses: res.data.interesses,
-    periodo: Number(res.data.periodo),
-    materias: res.data.materias,
+    interests: res.data.interests,
+    term: Number(res.data.term),
+    subjects: res.data.subjects,
   }
   return user;
 }

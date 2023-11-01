@@ -38,9 +38,9 @@ function AuthProvider({ children }) {
           name: newUserData.get('firstName'),
           email: newUserData.get('email'),
           password: newUserData.get('password'),
-          interesses: newUserData.get('interesses'),
-          periodo: newUserData.get('periodo'),
-          materias: newUserData.get('materias'),
+          interests: newUserData.get('interests'),
+          term: newUserData.get('term'),
+          subjects: newUserData.get('subjects'),
         })
 
 

@@ -34,17 +34,17 @@ function getValidations(method) {
           .withMessage('Você deve digitar uma senha!')
           .notEmpty()
           .withMessage('O campo de senha deve estar preenchido!'),
-        body('interesses')
+        body('interests')
           .exists()
           .withMessage('O campo de interesses deve estar preenchido!')
           .isAlpha('pt-BR', { ignore: ' ' })
           .withMessage('A frase inserida deve ser uma frase válida'),
-        body('periodo')
+        body('term')
           .exists()
           .withMessage('O campo de periodo deve estar preenchido!')
           .isDecimal()
           .withMessage('O número inserido deve ser um número válido (deve conter apenas números)'),
-        body('materias')
+        body('subjects')
           .exists()
           .withMessage('O campo de materias deve estar preenchido!')
           .isAlpha('pt-BR', { ignore: ' ' })
@@ -68,17 +68,17 @@ function getValidations(method) {
           .withMessage('Você deve digitar uma senha!')
           .notEmpty()
           .withMessage('O campo de senha deve estar preenchido!'),
-        body('interesses')
+        body('interests')
           .exists()
           .withMessage('O campo de interesses deve estar preenchido!')
           .isAlpha('pt-BR', { ignore: ' ' })
           .withMessage('A frase inserida deve ser uma frase válida'),
-        body('periodo')
+        body('term')
           .exists()
           .withMessage('O campo de periodo deve estar preenchido!')
           .isDecimal()
           .withMessage('O número inserido deve ser um número válido (deve conter apenas números)'),
-        body('materias')
+        body('subjects')
           .exists()
           .withMessage('O campo de materias deve estar preenchido!')
           .isAlpha('pt-BR', { ignore: ' ' })
@@ -102,17 +102,17 @@ function getValidations(method) {
           .withMessage('Você deve digitar uma senha!')
           .notEmpty()
           .withMessage('O campo de senha deve estar preenchido!'),
-        body('interesses')
+        body('interests')
           .exists()
           .withMessage('O campo de interesses deve estar preenchido!')
           .isAlpha('pt-BR', { ignore: ' ' })
           .withMessage('A frase inserida deve ser uma frase válida'),
-        body('periodo')
+        body('term')
           .exists()
           .withMessage('O campo de periodo deve estar preenchido!')
           .isDecimal()
           .withMessage('O número inserido deve ser um número válido (deve conter apenas números)'),
-        body('materias')
+        body('subjects')
           .exists()
           .withMessage('O campo de materias deve estar preenchido!')
           .isAlpha('pt-BR', { ignore: ' ' })

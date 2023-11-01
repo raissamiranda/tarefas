@@ -108,10 +108,10 @@ export default function SignUp() {
               <TextField
                   required
                   fullWidth
-                  id="interesses"
-                  label="Interesses/Hobbies"
-                  name="interesses"
-                  autoComplete="interesses"
+                  id="interests"
+                  label="interesses/Hobbies"
+                  name="interests"
+                  autoComplete="interests"
                   color="secondary"
                   sx={{borderColor: '#ffcdd4', bgcolor: '#efc2c9' }}
                 />
@@ -120,10 +120,10 @@ export default function SignUp() {
               <TextField
                   required
                   fullWidth
-                  id="periodo"
+                  id="term"
                   label="Período"
-                  name="periodo"
-                  autoComplete="periodo"
+                  name="term"
+                  autoComplete="term"
                   color="secondary"
                   sx={{borderColor: '#ffcdd4', bgcolor: '#efc2c9' }}
                 />
@@ -132,10 +132,10 @@ export default function SignUp() {
               <TextField
                   required
                   fullWidth
-                  id="materias"
+                  id="subjects"
                   label="Matérias"
-                  name="materias"
-                  autoComplete="materias"
+                  name="subjects"
+                  autoComplete="subjects"
                   color="secondary"
                   sx={{borderColor: '#ffcdd4', bgcolor: '#efc2c9' }}
                 />

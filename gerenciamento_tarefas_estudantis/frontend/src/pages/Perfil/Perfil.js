@@ -48,9 +48,9 @@ export default function Perfil() {
     id: "",
     name: "",
     email: "",
-    interesses: "",
-    periodo: 0,
-    materias: "",
+    interests: "",
+    term: 0,
+    subjects: "",
   })
 
   const [imageUrl, setImageUrl] = React.useState('');
@@ -159,17 +159,17 @@ export default function Perfil() {
                   <DataAlign>
                     <InterestsIcon />
                     <Label> Interesses/Hobbies: </Label>
-                    <Value> {userData.interesses} </Value>
+                    <Value> {userData.interests} </Value>
                   </DataAlign>
                   <DataAlign>
                     <SchoolIcon />
                     <Label> Período: </Label>
-                    <Value> {userData.periodo} </Value>
+                    <Value> {userData.term} </Value>
                   </DataAlign>
                   <DataAlign>
                     <BookIcon />
                     <Label> Matérias: </Label>
-                    <Value> {userData.materias} </Value>
+                    <Value> {userData.subjects} </Value>
                   </DataAlign>
                 </DataContainer>
               </Divider>
