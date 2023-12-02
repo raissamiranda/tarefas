@@ -1,6 +1,6 @@
 const app = require('./config/express-config');
 /*global process*/
-const port = process.env.PORT; //caminho para acessar a variavel
+const port = 3030; //caminho para acessar a variavel
 //api tem que rodar em uma porta para que o front possa acessar essa porta
 app.listen(port, console.log(`Server is running on port ${port}`));
 
