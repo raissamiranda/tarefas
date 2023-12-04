@@ -10,6 +10,7 @@ class UserService {
 
     user.password = await bcrypt.hash(user.password, saltRounds);
     await User.create(user);
+    return user
   }
 
   async updatePassword(user, code) {

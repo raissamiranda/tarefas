@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { screen, fireEvent } from '@testing-library/react';
+import { render } from '@babel/preset-react';
 import Login from './Login';
 
 describe('Login', () => {

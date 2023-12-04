@@ -22,7 +22,9 @@
     "mysql2": "^2.3.3",
     "nodemailer": "^6.8.0",
     "passport": "^0.6.0",
-    "sequelize": "^6.25.2"
+    "react-scripts": "^5.0.1",
+    "sequelize": "^6.25.2",
+    "supertest": "^6.3.3"
   },
   "devDependencies": {
     "eslint": "^8.23.1",
