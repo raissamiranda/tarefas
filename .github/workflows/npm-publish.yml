@@ -22,13 +22,13 @@ jobs:
           node-version: 16
 
       - name: Install Dependencies
-        run: cd backend && npm ci
+        run: cd gerenciamento_tarefas_estudantis/backend && npm ci
 
       - name: Build
-        run: cd backend && npm build
+        run: cd gerenciamento_tarefas_estudantis/backend && npm build
 
       - name: Test
-        run: cd backend && npm test
+        run: cd gerenciamento_tarefas_estudantis/backend && npm test
 
   build-frontend:
     runs-on: ubuntu-latest
@@ -42,13 +42,13 @@ jobs:
           node-version: 16
 
       - name: Install Dependencies
-        run: cd frontend && npm ci
+        run: cd gerenciamento_tarefas_estudantis/frontend && npm ci
 
       - name: Build
-        run: cd frontend && npm build
+        run: cd gerenciamento_tarefas_estudantis/frontend && npm build
 
       - name: Test
-        run: cd frontend && npm test
+        run: cd gerenciamento_tarefas_estudantis/frontend && npm test
 
   publish-npm:
     needs: [build-backend, build-frontend]
@@ -64,15 +64,15 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install Dependencies
-        run: cd backend && npm ci
+        run: cd gerenciamento_tarefas_estudantis/backend && npm ci
 
       - name: Build
-        run: cd backend && npm build
+        run: cd gerenciamento_tarefas_estudantis/backend && npm build
 
       - name: Test
-        run: cd backend && npm test
+        run: cd gerenciamento_tarefas_estudantis/backend && npm test
 
       - name: Publish to npm
-        run: cd backend && npm publish
+        run: cd gerenciamento_tarefas_estudantis/backend && npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
