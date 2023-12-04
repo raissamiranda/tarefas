@@ -25,7 +25,7 @@ jobs:
         run: cd gerenciamento_tarefas_estudantis/backend && npm ci
 
       - name: Build
-        run: cd gerenciamento_tarefas_estudantis/backend && npm build
+        run: cd gerenciamento_tarefas_estudantis/backend && npm run-script build
 
       - name: Test
         run: cd gerenciamento_tarefas_estudantis/backend && npm test
@@ -45,7 +45,7 @@ jobs:
         run: cd gerenciamento_tarefas_estudantis/frontend && npm ci
 
       - name: Build
-        run: cd gerenciamento_tarefas_estudantis/frontend && npm build
+        run: cd gerenciamento_tarefas_estudantis/frontend && npm run-script build
 
       - name: Test
         run: cd gerenciamento_tarefas_estudantis/frontend && npm test
@@ -67,7 +67,7 @@ jobs:
         run: cd gerenciamento_tarefas_estudantis/backend && npm ci
 
       - name: Build
-        run: cd gerenciamento_tarefas_estudantis/backend && npm build
+        run: cd gerenciamento_tarefas_estudantis/backend && npm run-script build
 
       - name: Test
         run: cd gerenciamento_tarefas_estudantis/backend && npm test
