@@ -41,9 +41,6 @@ jobs:
       - name: Install Dependencies
         run: cd gerenciamento_tarefas_estudantis/frontend && npm ci
 
-      - name: Build
-        run: cd gerenciamento_tarefas_estudantis/frontend && npm run-script build
-
       - name: Test
         run: cd gerenciamento_tarefas_estudantis/frontend && npm test
 
