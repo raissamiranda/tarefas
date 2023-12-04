@@ -24,9 +24,6 @@ jobs:
       - name: Install Dependencies
         run: cd gerenciamento_tarefas_estudantis/backend && npm ci
 
-      - name: Build
-        run: cd gerenciamento_tarefas_estudantis/backend && npm run-script build
-
       - name: Test
         run: cd gerenciamento_tarefas_estudantis/backend && npm test
 
@@ -65,9 +62,6 @@ jobs:
 
       - name: Install Dependencies
         run: cd gerenciamento_tarefas_estudantis/backend && npm ci
-
-      - name: Build
-        run: cd gerenciamento_tarefas_estudantis/backend && npm run-script build
 
       - name: Test
         run: cd gerenciamento_tarefas_estudantis/backend && npm test
